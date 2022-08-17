@@ -50,7 +50,7 @@ header a {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 400px;
+    max-width: 360px;
     gap: 10px;
 }
 
@@ -58,7 +58,7 @@ header a {
 .right-container {
     display: flex;
     flex-direction: column;
-    max-width: 200px;
+    max-width: 180px;
     gap: 10px;
 }
 
@@ -74,8 +74,7 @@ header a {
     flex-wrap: wrap;
 }
 .random-peek img {
-    max-width: 175px;
-    /* height: 150px; */
+    max-width: 158px;
     border-radius: 10px;
 }
 
@@ -84,7 +83,7 @@ header a {
 }
 
 .random-peek p {
-    width: 175px;
+    max-width: 158px;
     text-align: center;
     color: #222831;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
