@@ -59,7 +59,6 @@ header a {
     display: flex;
     flex-direction: column;
     max-width: 180px;
-    gap: 10px;
 }
 
 .container-holder h1 {
@@ -74,8 +73,10 @@ header a {
     flex-wrap: wrap;
 }
 .random-peek img {
-    max-width: 158px;
     border-radius: 10px;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
 }
 
 .random-peek a {
@@ -84,6 +85,7 @@ header a {
 
 .random-peek p {
     max-width: 158px;
+    height: 35.2px;
     text-align: center;
     color: #222831;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
