@@ -2,6 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
  /* Header */
@@ -27,7 +28,6 @@ header ul {
     display: flex;
     list-style: none;
     gap: 1rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 header a {
@@ -64,7 +64,7 @@ header a {
 .container-holder h1 {
     text-align: center;
     color: #222831;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Fuzzy Bubbles', sans-serif;
 }
 
 .random-peek {
@@ -99,11 +99,6 @@ footer {
     background-color: #222831;
     padding: 1rem;
     justify-content: center;
-    align-items: center;
     font-size: 14px;
-
-}
-
-footer p {
     color: #EEEEEE;
 }

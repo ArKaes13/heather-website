@@ -2,6 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
  /* Header */
@@ -27,7 +28,6 @@ header ul {
     display: flex;
     list-style: none;
     gap: 1rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 header a {
@@ -36,6 +36,64 @@ header a {
 }
 
 /* Content */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7%;
+}
+
+.container h1 {
+    text-align: center;
+    font-family: 'Fuzzy Bubbles', sans-serif;
+
+}
+
+legend {
+    font-size: 1.2rem;
+    font-family: Helvetica, Arial, sans-serif;
+    margin-top: 1rem;
+}
+
+.title-legend {
+    font-size: 1.5rem;
+}
+
+input {
+    height: 1.5rem;
+    width: 1.5rem;
+    vertical-align: bottom;
+}
+
+label {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#generateBtn,
+#resetBtn {
+    font-family: Helvetica, Arial, sans-serif;
+    height: 2rem;
+    width: 45%;
+    margin: 1rem 0 0 0;
+    font-size: 1rem;
+}
+
+#generateBtn {
+    background-color: #00ADB5;
+    color: #FEFBF6;
+    margin: 0 .5rem;
+    border: 0;
+    border-radius: 5px;
+}
+
+#resetBtn {
+    background-color: #222831;
+    color: #FEFBF6;
+    border: 0;
+    border-radius: 5px;
+}
 
 /* Footer */
 

@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 /* Header */
@@ -25,7 +26,6 @@ header ul {
     display: flex;
     list-style: none;
     gap: 1rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 header a {
@@ -67,7 +67,6 @@ header a {
     width: 125px;
     margin: auto;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #393E46;
     font-weight: 700;
 }

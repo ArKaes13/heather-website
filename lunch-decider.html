@@ -5,13 +5,22 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Heather's Kitchen</title>
+        <!--CSS-->
         <link rel="stylesheet" href="./css/lunch-decider.css">
+        <!--Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap" rel="stylesheet">
+        <!--Icon-->
         <link rel="icon" href="favicon.ico">
+        <!--JS-->
         <script src="./js/copyright-date.js" defer></script>
         <script src="./js/lunch-decider.js" defer></script>
+        <!--Fontawesome-->
+        <script src="https://kit.fontawesome.com/43124feaf5.js" crossorigin="anonymous"></script>
     </head>
 <body>
     <header>
@@ -22,7 +31,37 @@
             <li><a href='./recipe-index.html'>Recipe Index</a></li>
         </ul>
     </header>
-    <h1>Under Construction</h1>
+    <div class="container">
+        <h1>What's for lunch!?</h1>
+        <form>
+            <fieldset>
+                <legend class="title-legend">Choose Your Preference</legend>
+                <legend>Would you like to Dine In?</legend>
+                <input checked type="radio" id="noPreference" name="dineIn" value="noPreference">
+                <label for="noPreference">No Preference</label><br>
+                <input type="radio" id="yes" name="dineIn" value="yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="no" name="dineIn" value="no">
+                <label for="no">No</label><br>
+
+                <legend>What're you in the mood for?</legend>
+                <input checked type="radio" id="noPreference" name="genre" value="noPreference">
+                <label for="noPreference">No Preference</label><br>
+                <input type="radio" id="asian" name="genre" value="asian">
+                <label for="asian">Asian</label><br>
+                <input type="radio" id="burgers" name="genre" value="burgers">
+                <label for="burgers">Burgers</label><br>
+                <input type="radio" id="fastFood" name="genre" value="fastFood">
+                <label for="fastFood">Fast Food</label><br>
+                <input type="radio" id="mexican" name="genre" value="mexican">
+                <label for="mexican">Mexican</label><br>
+                <input type="radio" id="other" name="genre" value="other">
+                <label for="other">Other</label><br>
+                <input id="generateBtn" type="submit" value="Generate">
+                <input id="resetBtn" type="reset">
+            </fieldset>
+        </form>
+    </div>
     <footer>
         <p class="copyright"></p>
     </footer>
