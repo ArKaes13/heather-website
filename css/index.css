@@ -41,14 +41,12 @@ header a {
     display: flex;
     background-color: #EEEEEE;
     justify-content: center;
-    align-items: center;
     padding: 3rem 1rem 3rem 1rem;
 }
 
 .container-holder {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     max-width: 360px;
     gap: 10px;
@@ -65,6 +63,7 @@ header a {
     text-align: center;
     color: #222831;
     font-family: 'Fuzzy Bubbles', sans-serif;
+    width: 320px;
 }
 
 .random-peek {

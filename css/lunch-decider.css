@@ -43,17 +43,16 @@ header a {
     justify-content: center;
     align-items: center;
     padding: 7%;
+    background-color: #EEEEEE;
 }
 
 .container h1 {
     text-align: center;
     font-family: 'Fuzzy Bubbles', sans-serif;
-
 }
 
 legend {
     font-size: 1.2rem;
-    font-family: Helvetica, Arial, sans-serif;
     margin-top: 1rem;
 }
 
@@ -61,19 +60,25 @@ legend {
     font-size: 1.5rem;
 }
 
-input {
+input[type='radio'] {
     height: 1.5rem;
     width: 1.5rem;
-    vertical-align: bottom;
+    margin: 5px 0 0 0;
+    transform: translateY(.3rem);
+    appearance: none;
+    border: 2px solid #222831;
+	border-radius: 50%;
+	background-clip: content-box;
+	padding: 3px;
 }
 
-label {
-    font-family: Helvetica, Arial, sans-serif;
+input[type='radio']:checked {
+    background-color: #00ADB5;
+    border: 2px solid #00ADB5;
 }
 
 #generateBtn,
 #resetBtn {
-    font-family: Helvetica, Arial, sans-serif;
     height: 2rem;
     width: 45%;
     margin: 1rem 0 0 0;
@@ -104,7 +109,6 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 14px;
-
 }
 
 footer p {
