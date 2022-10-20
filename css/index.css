@@ -19,7 +19,7 @@ header h1 {
     margin: 0;
     padding: 0;
     font-family: 'Dancing Script', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #222831;
     margin-right: auto;
 }
@@ -63,7 +63,8 @@ header a {
     text-align: center;
     color: #222831;
     font-family: 'Fuzzy Bubbles', sans-serif;
-    width: 340px;
+    font-size: 1.8rem;
+    width: 360px;
 }
 
 .random-peek {
