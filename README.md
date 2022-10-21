@@ -1,5 +1,7 @@
 # heather-website
 
+Demo: https://arkaes13.github.io/heather-website/
+
 ## Introduction
 This is a project I made to help my girlfriend store and navigate her cooking recipes. Recipe websites are often flooded with ads and fluff, this is a no nonsense website that she can use to quickly find her favorite recipes. Additionally, it has a 'lunch-decider' that will help determine what to have for lunch in our local area. 
 
