@@ -18,7 +18,7 @@ header {
 header h1 {
     margin: 0;
     padding: 0;
-    font-family: 'Dancing Script', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Dancing Script', sans-serif;
     font-size: 24px;
     color: #222831;
     margin-right: auto;
@@ -37,7 +37,8 @@ header a {
 
 /* Content */
 
-.container {
+.container,
+.outcome {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -77,27 +78,43 @@ input[type='radio']:checked {
     border: 2px solid #00ADB5;
 }
 
-#generateBtn,
-#resetBtn {
-    height: 2rem;
-    width: 45%;
-    margin: 1rem 0 0 0;
-    font-size: 1rem;
-}
-
 #generateBtn {
+    height: 3rem;
+    width: 90%;
+    margin: 1rem 1rem .3rem 1rem;
+    font-size: 1.3rem;
     background-color: #00ADB5;
     color: #FEFBF6;
-    margin: 0 .5rem;
     border: 0;
     border-radius: 5px;
+    box-shadow: 0 5px rgb(199, 197, 197);
 }
 
-#resetBtn {
-    background-color: #222831;
-    color: #FEFBF6;
-    border: 0;
-    border-radius: 5px;
+#generateBtn:active {
+    background-color: #008b93;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+}
+
+.outcome {
+    padding: 0;
+}
+
+.outcome h2 {
+    font-family: 'Fuzzy Bubbles', sans-serif;
+    margin: 1rem 0 0 0;
+}
+
+.outcome h4 {
+    margin: 0 0 1rem 0;
+    font-family: 'Fuzzy Bubbles', sans-serif;
+    font-size: .7rem;
+}
+
+.outcome img {
+    max-width: 350px;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 /* Footer */
@@ -108,9 +125,6 @@ footer {
     padding: 1rem;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
-}
-
-footer p {
+    font-size: .9rem;
     color: #EEEEEE;
 }
