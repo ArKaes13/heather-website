@@ -1,7 +1,7 @@
 # heather-website
 
 ## Introduction
-This is a project I made to help my girlfriend store and navigate her cooking recipes. Recipe websites are often flooded with ads and fluff, this is a no nonsense website that she can use to quickyly find her favorite recipes. Additionally, it has a 'lunch-decider' that will help determine what to have for lunch in our local area. 
+This is a project I made to help my girlfriend store and navigate her cooking recipes. Recipe websites are often flooded with ads and fluff, this is a no nonsense website that she can use to quickly find her favorite recipes. Additionally, it has a 'lunch-decider' that will help determine what to have for lunch in our local area. 
 
 She will be viewing exclusively on a small iPhone so that was the primary concern when thinking about design.
 
@@ -19,7 +19,7 @@ The index is a full collection of all the recipe images/names in alphabetical or
 Each recipe card features a picture of the item and structured instructions/ingredients for making each item.
 
 ### Lunch Decider
-The 'lunch-decider' takes parameters for whether you want to *Dine In* or not and what *Genre* you would prefer. It creates a new list based on preferences and returns a randomly selected image/name for the chosen restuarant. 
+The 'lunch-decider' takes parameters for whether you want to *Dine In* or not and what *Genre* you would prefer. It creates a new list based on preferences and returns a randomly selected image/name for the chosen restaurant. 
 
 ---
 

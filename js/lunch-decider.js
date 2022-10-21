@@ -1,88 +1,88 @@
-var restuarants = [
+var restaurants = [
     {name: 'Casa Reveles',
     dineIn: 'yes',
     genre: 'mexican',
-    image: './restuarantImages/casaReveles.jpg',
+    image: './restaurantImages/casaReveles.jpg',
     },
     {name: `Denny's`,
     dineIn: 'yes',
     genre: 'burgers',
-    image: './restuarantImages/dennys.jpg',
+    image: './restaurantImages/dennys.jpg',
     },
     {name: 'Dominoes',
     dineIn: 'no',
     genre: 'fastFood',
-    image: './restuarantImages/dominoes.jpg',
+    image: './restaurantImages/dominoes.jpg',
     },
     {name: 'Jersey Mikes',
     dineIn: 'no',
     genre: 'other',
-    image: './restuarantImages/jerseyMikes.jpg',
+    image: './restaurantImages/jerseyMikes.jpg',
     },
     {name: 'La Cocina',
     dineIn: 'yes',
     genre: 'mexican',
-    image: './restuarantImages/laCocina.jpg',
+    image: './restaurantImages/laCocina.jpg',
     },
     {name: 'Los Rancheros',
     dineIn: 'no',
     genre: 'mexican',
-    image: './restuarantImages/losRancheros.jpg',
+    image: './restaurantImages/losRancheros.jpg',
     },
     {name: 'L&L Hawaiian BBQ',
     dineIn: 'yes',
     genre: 'other',
-    image: './restuarantImages/l&l.jpg',
+    image: './restaurantImages/l&l.jpg',
     },
     {name: 'Mananas',
     dineIn: 'yes',
     genre: 'mexican',
-    image: './restuarantImages/mananas.jpg',
+    image: './restaurantImages/mananas.jpg',
     },
     {name: 'Panda Express',
     dineIn: 'no',
     genre: 'fastFood',
-    image: './restuarantImages/pandaExpress.jpg',
+    image: './restaurantImages/pandaExpress.jpg',
     },
     {name: `Pete's BBQ`,
     dineIn: 'yes',
     genre: 'other',
-    image: './restuarantImages/petesBBQ.jpg',
+    image: './restaurantImages/petesBBQ.jpg',
     },
     {name: 'Pinto Thai',
     dineIn: 'yes',
     genre: 'asian',
-    image: './restuarantImages/pintoThai.jpg',
+    image: './restaurantImages/pintoThai.jpg',
     },
     {name: 'Popeyes',
     dineIn: 'no',
     genre: 'fastFood',
-    image: './restuarantImages/popeyes.jpg',
+    image: './restaurantImages/popeyes.jpg',
     },
     {name: 'Ramona Noodle House',
     dineIn: 'yes',
     genre: 'asian',
-    image: './restuarantImages/noodleHouse.jpg',
+    image: './restaurantImages/noodleHouse.jpg',
     },
     {name: `Sofie's Pita`,
     dineIn: 'yes',
     genre: 'other',
-    image: './restuarantImages/sofiesPita.jpg',
+    image: './restaurantImages/sofiesPita.jpg',
     },
     {name: 'The Barn',
     dineIn: 'yes',
     genre: 'burgers',
-    image: './restuarantImages/theBarn.jpg',
+    image: './restaurantImages/theBarn.jpg',
     },
     {name: 'Vibes Sushi Bar and Grill',
     dineIn: 'yes',
     genre: 'asian',
-    image: './restuarantImages/vibesSushiBar.jpg',
+    image: './restaurantImages/vibesSushiBar.jpg',
     },
     {name: `Wendy's`,
     dineIn: 'no',
     genre: 'fastFood',
-    image: './restuarantImages/wendys.jpg',
+    image: './restaurantImages/wendys.jpg',
     },
 ]
 
@@ -91,7 +91,7 @@ var genre = document.querySelectorAll("input[name='genre']");
 var generateBtn = document.querySelector('#generateBtn');
 var dineInChoice = '';
 var genreChoice = '';
-var filteredRestuarants = [];
+var filteredrestaurants = [];
 
 generateBtn.addEventListener('click', () => {
     for (i = 0; i < dineIn.length; i++) {
@@ -105,49 +105,49 @@ generateBtn.addEventListener('click', () => {
         }
     }
     if (dineInChoice == 'noPreference' && genreChoice == 'noPreference') {
-        filteredRestuarants = restuarants;
+        filteredrestaurants = restaurants;
     } else if (dineInChoice == 'noPreference' && genreChoice != 'noPreference') {
-        for (restuarant of restuarants) {
-            if (genreChoice == restuarant.genre) {
-                filteredRestuarants.push(restuarant);
+        for (restaurant of restaurants) {
+            if (genreChoice == restaurant.genre) {
+                filteredrestaurants.push(restaurant);
             }
         }
     } else if (dineInChoice != 'noPreference' && genreChoice == 'noPreference') {
-        for (restuarant of restuarants) {
-            if (dineInChoice == restuarant.dineIn) {
-                filteredRestuarants.push(restuarant);
+        for (restaurant of restaurants) {
+            if (dineInChoice == restaurant.dineIn) {
+                filteredrestaurants.push(restaurant);
             }
         }
     } else {
-        for (restuarant of restuarants) {
-            if (dineInChoice == restuarant.dineIn && genreChoice == restuarant.genre) {
-                filteredRestuarants.push(restuarant);
+        for (restaurant of restaurants) {
+            if (dineInChoice == restaurant.dineIn && genreChoice == restaurant.genre) {
+                filteredrestaurants.push(restaurant);
             }
         }
     }
 
-    var randomNumber = Math.floor(Math.random() * filteredRestuarants.length);
+    var randomNumber = Math.floor(Math.random() * filteredrestaurants.length);
     var outcome = document.querySelector('.outcome');
-    var restuarantName = document.querySelector('.outcome h2');
-    var totalRestuarants = document.querySelector('.outcome h4');
+    var restaurantName = document.querySelector('.outcome h2');
+    var totalrestaurants = document.querySelector('.outcome h4');
 
-    if (filteredRestuarants.length == 0) {
-        console.log(filteredRestuarants)
-        restuarantName.textContent = 'No matches were found, please broaden parameters.'
+    if (filteredrestaurants.length == 0) {
+        console.log(filteredrestaurants)
+        restaurantName.textContent = 'No matches were found, please broaden parameters.'
         outcome.removeChild(document.querySelector('img'));
     } else {
-        console.log(filteredRestuarants)
-        restuarantName.textContent = filteredRestuarants[randomNumber].name;
-        totalRestuarants.textContent = `(1 of ${filteredRestuarants.length})`
+        console.log(filteredrestaurants)
+        restaurantName.textContent = filteredrestaurants[randomNumber].name;
+        totalrestaurants.textContent = `(1 of ${filteredrestaurants.length})`
     }
 
     if (document.querySelector('.outcome img')) {
-        document.querySelector('.outcome img').src = filteredRestuarants[randomNumber].image;
+        document.querySelector('.outcome img').src = filteredrestaurants[randomNumber].image;
     } else {
         var img = document.createElement('img');
-        img.src = filteredRestuarants[randomNumber].image;
+        img.src = filteredrestaurants[randomNumber].image;
         outcome.appendChild(img);
     }
 
-    filteredRestuarants = [];
+    filteredrestaurants = [];
 })
