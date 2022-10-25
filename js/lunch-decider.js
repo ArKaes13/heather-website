@@ -132,11 +132,10 @@ generateBtn.addEventListener('click', () => {
     var totalrestaurants = document.querySelector('.outcome h4');
 
     if (filteredrestaurants.length == 0) {
-        console.log(filteredrestaurants)
-        restaurantName.textContent = 'No matches were found, please broaden parameters.'
+        restaurantName.textContent = 'No matches were found, please broaden parameters.';
         outcome.removeChild(document.querySelector('img'));
+        totalrestaurants.textContent = '';
     } else {
-        console.log(filteredrestaurants)
         restaurantName.textContent = filteredrestaurants[randomNumber].name;
         totalrestaurants.textContent = `(1 of ${filteredrestaurants.length})`
     }
