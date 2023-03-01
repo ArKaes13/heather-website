@@ -34,7 +34,7 @@ The 'lunch-decider' takes parameters for whether you want to *Dine In* or not an
 - How to create a nice README :)
 
 ## Mistakes I made or problems I encountered
-When I first created the site my knowledge of javascript was very limited. I included some internal JS to add the randomly selected recipes to the homepage. As a result of my ignorance I created 3 separate lists that I could iterate through but could have done the same by creating objects instead. I will leave the convoluted 'objects' in the code as a showcase of my learning process.
+When I first created the site my knowledge of javascript was very limited. I included some internal JS to add the randomly selected recipes to the homepage. As a result of my ignorance I created 3 separate arrays that I could iterate through but could have done the same by creating objects instead.
 
 One of the randomly generated quotes was messing up the format of the webpage. I used the Chrome dev tools to inspect each element and compare to the pages that had the correct format. Everything was the same, except the width of the quote. I didn't realize that due to using `display: flex` with `flex wrap: wrap` that the smaller word wasn't large enough to push the other elements down to the correct format. I solved this by setting a width to the text.
 
