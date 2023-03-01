@@ -1,25 +1,149 @@
-let foodImage = ['./foodImages/butter-chicken.jpg', './foodImages/shoyu-ramen-broth.jpg', './foodImages/chicken-katsu.jpg', './foodImages/chicken-shawarma.jpg', './foodImages/coconut-lime-chicken.jpg', './foodImages/creamy-garlic-pork-chops.jpg', './foodImages/creamy-parmesan-chicken.jpg', './foodImages/flat-iron-steak-with-gochujang-marinade.jpg', './foodImages/garlic-baked-chicken.jpg', './foodImages/garlic-butter-pork-chops.jpg', './foodImages/garlic-butter-shrimp.jpg', './foodImages/ginger-chicken-soup.jpg', './foodImages/jalapeno-chicken.jpg', './foodImages/korean-garlic-bread.jpg', './foodImages/korean-short-ribs.jpg', './foodImages/lemon-chicken.jpg', './foodImages/mexican-hot-carrots.jpg', './foodImages/mongolian-beef.jpg', './foodImages/orange-chicken.jpg', './foodImages/parmesan-meatballs.jpg', './foodImages/pork-lumpia.jpg', './foodImages/smoked-beef-short-ribs.jpg', './foodImages/tortilla-soup.jpg', './foodImages/vegetable-tempura.jpg', './foodImages/wonton-soup.jpg'];
-let foodName = ['Butter Chicken', 'Shoyu Ramen Broth', 'Chicken Katsu', 'Chicken Shawarma', 'Coconut Lime Chicken', 'Creamy Garlic Pork Chops', 'Creamy Parmesan Chicken', 'Flat Iron Steak with Gochujang', 'Garlic Butter Baked Chicken Breast', 'Garlic Butter Pork Chops', 'Garlic Butter Shrimp', 'Ginger Chicken Soup', 'Jalapeno Chicken', 'Korean Garlic Bread', 'Korean Short Ribs', 'Lemon Chicken', 'Mexican Hot Carrots', 'Mongolian Beef', 'Orange Chicken', 'Parmesan Meatballs', 'Pork Lumpia', 'Smoked Beef Short Ribs', 'Tortilla Soup', 'Vegetable Tempura', 'Wonton Soup'];
-let foodLink = ['./recipes/butter-chicken.html', './recipes/shoyu-ramen-broth.html', './recipes/chicken-katsu.html', './recipes/chicken-shawarma.html', './recipes/coconut-lime-chicken.html', './recipes/creamy-garlic-pork-chops.html', './recipes/creamy-parmesan-chicken.html', './recipes/flat-iron-steak-with-gochujang-marinade.html', './recipes/garlic-baked-chicken.html', './recipes/garlic-butter-pork-chops.html', './recipes/garlic-butter-shrimp.html', './recipes/ginger-chicken-soup.html', './recipes/jalapeno-chicken.html', './recipes/korean-garlic-bread.html', './recipes/korean-short-ribs.html', './recipes/lemon-chicken.html', './recipes/mexican-hot-carrots.html', './recipes/mongolian-beef.html', './recipes/orange-chicken.html', './recipes/parmesan-meatballs.html', './recipes/pork-lumpia.html', './recipes/smoked-beef-short-ribs.html', './recipes/tortilla-soup.html', './recipes/vegetable-tempura.html', './recipes/wonton-soup.html'];
+// Stores all food items and their relative properties.
+const food = [
+    {
+        name: 'Butter Chicken',
+        image: './foodImages/butter-chicken.jpg',
+        link: './recipes/butter-chicken.html'
+    },
+    {
+        name: 'Cheesecake',
+        image: './foodImages/cheesecake.jpg',
+        link: './recipes/cheesecake.html'
+    },
+    {
+        name: 'Chicken Katsu',
+        image: './foodImages/chicken-katsu.jpg',
+        link: './recipes/chicken-katsu.html'
+    },
+    {
+        name: 'Chicken Shawarma',
+        image: './foodImages/chicken-shawarma.jpg',
+        link: './recipes/chicken-shawarma.html'
+    },
+    {
+        name: 'Coconut Lime Chicken',
+        image: './foodImages/coconut-lime-chicken.jpg',
+        link: './recipes/coconut-lime-chicken.html'
+    },
+    {
+        name: 'Creamy Garlic Pork Chops',
+        image: './foodImages/creamy-garlic-pork-chops.jpg',
+        link: './recipes/creamy-garlic-pork-chops.html'
+    },
+    {
+        name: 'Creamy Parmesan Chicken',
+        image: './foodImages/creamy-parmesan-chicken.jpg',
+        link: './recipes/creamy-parmesan-chicken.html'
+    },
+    {
+        name: 'Flat Iron Steak with Gochujang',
+        image: './foodImages/flat-iron-steak-with-gochujang-marinade.jpg',
+        link: './recipes/flat-iron-steak-with-gochujang-marinade'
+    },
+    {
+        name: 'Garlic Baked Chicken',
+        image: './foodImages/garlic-baked-chicken.jpg',
+        link: './recipes/garlic-baked-chicken.html'
+    },
+    {
+        name: 'Garlic Butter Pork Chops',
+        image: './foodImages/garlic-butter-pork-chops.jpg',
+        link: './recipes/garlic-butter-pork-chops.html'
+    },
+    {
+        name: 'Garlic Butter Shrimp',
+        image: './foodImages/garlic-butter-shrimp.jpg',
+        link: './recipes/garlic-butter-shrimp.html'
+    },
+    {
+        name: 'Ginger Chicken Soup',
+        image: './foodImages/ginger-chicken-soup.jpg',
+        link: './recipes/ginger-chicken-soup.html'
+    },
+    {
+        name: 'Jalapeno Chicken',
+        image: './foodImages/jalapeno-chicken.jpg',
+        link: './recipes/jalapeno-chicken.html'
+    },
+    {
+        name: 'Korean Garlic Bread',
+        image: './foodImages/korean-garlic-bread.jpg',
+        link: './recipes/korean-garlic-bread.html'
+    },
+    {
+        name: 'Korean Short Ribs',
+        image: './foodImages/korean-short-ribs.jpg',
+        link: './recipes/korean-short-ribs.html'
+    },
+    {
+        name: 'Lemon Chicken',
+        image: './foodImages/lemon-chicken.jpg',
+        link: './recipes/lemon-chicken.html'
+    },
+    {
+        name: 'Mongolian Beef',
+        image: './foodImages/mongolian-beef.jpg',
+        link: './recipes/mongolian-beef.html'
+    },
+    {
+        name: 'Orange Chicken',
+        image: './foodImages/orange-chicken.jpg',
+        link: './recipes/orange-chicken.html'
+    },
+    {
+        name: 'Parmesan Meatballs',
+        image: './foodImages/parmesan-meatballs.jpg',
+        link: './recipes/parmesan-meatballs.html'
+    },
+    {
+        name: 'Pork Lumpia',
+        image: './foodImages/pork-lumpia.jpg',
+        link: './recipes/pork-lumpia.html'
+    },
+    {
+        name: 'Shoyu Ramen Broth',
+        image: './foodImages/shoyu-ramen-broth.jpg',
+        link: './recipes/shoyu-ramen-broth.html'
+    },
+    {
+        name: 'Smoked Beef Short Ribs',
+        image: './foodImages/smoked-beef-short-ribs.jpg',
+        link: './recipes/smoked-beef-short-ribs.html'
+    },
+    {
+        name: 'Tortilla Soup',
+        image: './foodImages/tortilla-soup.jpg',
+        link: './recipes/tortilla-soup.html'
+    },
+    {
+        name: 'Vegetable Tempura',
+        image: './foodImages/vegetable-tempura.jpg',
+        link: './recipes/vegetable-tempura.html'
+    },
+    {
+        name: 'Wonton Soup',
+        image: './foodImages/wonton-soup.jpg',
+        link: './recipes/wonton-soup.html'
+    },
+];
 let series = 1;
 let randomNumber = Math.random();
 
+// Grabs a random food item and diplays it on the homepage.
 function randomFood() {
-    var foodNumber = Math.floor(randomNumber * foodImage.length);
-    document.getElementById(`image` + `${series}`).src = foodImage[foodNumber];
-    document.getElementById(`text` + `${series}`).textContent = foodName[foodNumber];
-    document.getElementById(`link` + `${series}`).href = foodLink[foodNumber];
-    foodImage.splice(foodNumber, 1);
-    foodName.splice(foodNumber, 1);
-    foodLink.splice(foodNumber, 1);
+    let foodIndex = Math.floor(randomNumber * food.length);
+    document.getElementById(`text` + `${series}`).textContent = food[foodIndex].name;
+    document.getElementById(`image` + `${series}`).src = food[foodIndex].image;
+    document.getElementById(`link` + `${series}`).href = food[foodIndex].link;
+    food.splice(foodIndex, 1);
     series++;
 }
 
-let quotes = [`Let's get cookin!`, `Classic Heather`, `Is the juice worth the squeeze?`, `Scrumdiddlyumptious!`, `Mmm Mmm Good`, `More than good, it's gggreat!`, `Love you Heather :)`, `Food is love`, `We Feast!`];
-
+// Ideally brightens up my girlfriends day with a random quote.
 function randomQuote() {
-    var quoteNumber = Math.floor(randomNumber * quotes.length);
-    document.querySelector('.randomQuotes').textContent = quotes[quoteNumber];
+    let quotes = [`Let's get cookin!`, `Classic Heather`, `Do you have a lazy eye?`, `I don't give two wet farts!`, `Baby tree!`, `Scrumdiddlyumptious!`, `Mmm Mmm Good`, `More than good, it's gggreat!`, `Love you Heather :)`, `Food is love`, `We Feast!`];
+    let quoteIndex = Math.floor(randomNumber * quotes.length);
+    document.querySelector('.randomQuotes').textContent = quotes[quoteIndex];
 }
 
 for (i = 0; i < 4; i++) {
