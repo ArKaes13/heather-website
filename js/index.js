@@ -1,6 +1,11 @@
 // Stores all food items and their relative properties.
 const food = [
     {
+        name: 'Burrito Bowl',
+        image: './foodImages/burrito-bowl.jpg',
+        link: './recipes/burrito-bowl.html'
+    },
+    {
         name: 'Butter Chicken',
         image: './foodImages/butter-chicken.jpg',
         link: './recipes/butter-chicken.html'
