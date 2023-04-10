@@ -86,6 +86,11 @@ const food = [
         link: './recipes/lemon-chicken.html'
     },
     {
+        name: 'Lemon Garlic Chicken with Green Beans',
+        image: './foodImages/lemon-garlic-chicken-with-green-beans.jpg',
+        link: './recipes/lemon-garlic-chicken-with-green-beans.html'
+    },
+    {
         name: 'Mongolian Beef',
         image: './foodImages/mongolian-beef.jpg',
         link: './recipes/mongolian-beef.html'
