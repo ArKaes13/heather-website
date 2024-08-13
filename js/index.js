@@ -86,6 +86,11 @@ const food = [
         link: './recipes/korean-short-ribs.html'
     },
     {
+        name: 'Kung Pao Chicken',
+        image: './foodImages/kung-pao-chicken.jpg',
+        link: './recipes/kung-pao-chicken.html'
+    },
+    {
         name: 'Lemon Chicken',
         image: './foodImages/lemon-chicken.jpg',
         link: './recipes/lemon-chicken.html'
