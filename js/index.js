@@ -11,6 +11,11 @@ const food = [
         link: './recipes/butter-chicken.html'
     },
     {
+        name: 'Carnitas',
+        image: './foodImages/carnitas.jpg',
+        link: './recipes/carnitas.html'
+    },
+    {
         name: 'Cheesecake',
         image: './foodImages/cheesecake.jpg',
         link: './recipes/cheesecake.html'
@@ -151,7 +156,7 @@ function randomFood() {
 
 // Ideally brightens up my girlfriends day with a random quote.
 function randomQuote() {
-    let quotes = [`Let's get cookin!`, `Classic Heather`, `Do you have a lazy eye?`, `I don't give two wet farts!`, `Baby tree!`, `Scrumdiddlyumptious!`, `Mmm Mmm Good`, `More than good, it's gggreat!`, `Love you Heather :)`, `Food is love`, `We Feast!`];
+    let quotes = [`Let's get cookin!`, `Classic Heather`, `Do you have a lazy eye?`, `Baby tree!`, `Scrumdiddlyumptious!`, `Mmm Mmm Good`, `More than good, it's gggreat!`, `Love you Heather :)`, `Food is love`, `We Feast!`];
     let quoteIndex = Math.floor(randomNumber * quotes.length);
     document.querySelector('.randomQuotes').textContent = quotes[quoteIndex];
 }
